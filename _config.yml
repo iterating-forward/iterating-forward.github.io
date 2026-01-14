@@ -1,0 +1,19 @@
+title: Iterating Forward
+description: Thoughts on software, technology, and continuous improvement
+author: iterating-forward
+baseurl: ""
+url: "https://iterating-forward.github.io"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalink style
+permalink: /:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
