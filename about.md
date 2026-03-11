@@ -42,15 +42,4 @@ Iterating Forward. One step at a time. Ship something, learn from it, improve. T
 
 ---
 
-## Stay in the Loop
-
-New posts delivered to your inbox. No spam, unsubscribe anytime.
-
-<form action="https://buttondown.com/api/emails/embed-subscribe/iteratingforward" method="post" class="embeddable-buttondown-form">
-  <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
-  <input type="submit" value="Subscribe" />
-</form>
-
----
-
-*Based in Australia. Currently working with enterprise teams navigating what comes next.*
+*Currently working with enterprise teams navigating what comes next.*

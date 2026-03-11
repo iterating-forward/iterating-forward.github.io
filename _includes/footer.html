@@ -1,0 +1,31 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p class="subscribe-heading">
+          Subscribe via <a href="{{ "/feed.xml" | relative_url }}">RSS</a> or 
+          <a href="#" id="email-toggle" onclick="document.getElementById('email-form').style.display='flex'; this.style.display='none'; return false;">Email</a>
+        </p>
+        <form id="email-form" action="https://buttondown.com/api/emails/embed-subscribe/iteratingforward" method="post" class="embeddable-buttondown-form" style="display:none; margin-top: 10px; align-items: center; gap: 6px;">
+          <input type="email" name="email" placeholder="you@example.com" style="padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; width: 180px;" />
+          <button type="submit" style="padding: 6px 10px; background: #eee; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 14px;" title="Subscribe">→</button>
+          <button type="button" onclick="document.getElementById('email-form').style.display='none'; document.getElementById('email-toggle').style.display='inline'; return false;" style="padding: 6px 10px; background: #eee; color: #666; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 14px;" title="Cancel">✕</button>
+        </form>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      </div>
+    </div>
+
+  </div>
+
+</footer>
