@@ -5,80 +5,71 @@ date: 2026-05-09
 categories: engineering ai craftsmanship
 ---
 
-**Summary**: Most software work is moving from craft build to assembly work. That's good for speed and access. It also means quality now depends on inspection, not hero coding.
+**Summary**: AI is moving most software work from hand-craft to assembly. That improves speed and access. It also shifts the real skill to review, constraints, and quality control.
 
-**Tech Context (May 2026)**: Controlled studies keep showing the same pattern: AI assistants increase coding speed, while security quality gets shakier without stronger review discipline.
+**Tech Context (May 2026)**: The pattern is consistent across current research: AI coding assistants increase delivery speed, but security quality drops when teams trust generated code too quickly.
 
 ---
 
-For years, software teams talked about craftsmanship like every feature was a hand-built walnut table.
+For years, software teams liked to talk like every feature was a hand-built walnut dining table.
 
-Nice story. Wrong market.
+Meanwhile, the market was asking for something else: affordable, functional, and delivered before quarter-end.
 
-What most companies need is affordable furniture that arrives this week, fits through the door, and doesn't collapse when someone sits down.
+That's IKEA's game. Software is moving there fast.
 
-That's IKEA's model. Software is heading the same way.
+## Flat-Pack Won the Mainstream
 
-## The Work Is Shifting From Making to Assembling
+Most engineering work in most companies is not deep computer science. It's integration work, CRUD work, migration work, API glue, test scaffolding, and UI plumbing.
 
-AI now drafts a lot of routine code faster than humans. Boilerplate, tests, CRUD endpoints, migration scripts, adapter glue — the unglamorous middle of software delivery.
+AI does a lot of that quickly.
 
-That does not remove engineers. It changes the job.
+That doesn't make engineers irrelevant. It changes what good engineers spend time on.
 
-Less time typing from scratch. More time doing the parts AI is bad at:
-- deciding trade-offs under real constraints
-- spotting weak assumptions
-- checking security and operational risk
-- keeping systems coherent over time
+I've seen teams cut implementation time and still lose the sprint because review was weak, assumptions were wrong, and nobody challenged generated code before merge.
 
-In furniture terms, fewer people carving legs by hand, more people choosing the right parts and making sure the thing doesn't wobble.
+## Speed Helps. Confidence Hurts.
 
-## Speed Is Real. So Is False Confidence.
+The Copilot experiment found developers completed tasks much faster with AI assistance.
 
-The Copilot productivity experiment showed developers finishing tasks much faster with AI assistance. Useful. Measurable. No argument from me.
+A separate large user study found participants with AI assistants produced less secure code and felt more confident in it.
 
-Another large user study found participants with AI help produced less secure code and were more likely to believe it was secure.
+That pairing is the risk profile.
 
-That combination is the point.
+Higher throughput plus higher confidence can flood production with brittle code faster than your process can catch it.
 
-Faster output plus inflated confidence is how teams ship problems at scale. You get throughput and incident tickets in the same sprint.
+## Where Bespoke Still Matters
 
-## What Becomes "Bespoke"
+Hand-crafted engineering is not dead. It just moved to narrower territory.
 
-A small share of software still needs true craftsmanship:
-- safety-critical systems
-- high-risk financial or compliance-heavy workflows
-- core product architecture where mistakes compound for years
-- performance-critical paths where generic code is too expensive
+You still want careful, expensive craftsmanship in high-consequence systems: safety-critical software, core architecture decisions, compliance-heavy flows, and performance paths where inefficiency compounds.
 
-That's the custom joinery tier. Expensive on purpose.
+Everything else will be judged by utility, cost, and time-to-value.
 
-The rest of the market will accept "good enough" if it is fast, clear, maintainable, and cheap.
+Most buyers won't pay bespoke prices for a bookshelf, and most companies won't fund bespoke engineering for internal admin tooling.
 
-Not elegant. Just useful.
+## The Craft Moved Up a Level
 
-## The New Craft Is Quality Control
+If code generation gets cheaper, judgment gets more valuable.
 
-Teams that treat AI as a junior who never gets tired do fine.
+The hard part is no longer "can we type this quickly?" The hard part is:
 
-Teams that treat AI as a senior architect usually end up learning about incident response the hard way.
+- choosing sane defaults
+- enforcing review where risk is high
+- running automated security checks early
+- recording key decisions so future teams understand why code exists
 
-If software is becoming flat-pack, engineering maturity now looks like this:
-- strong defaults and templates
-- mandatory review for risky changes
-- automated security and dependency checks
-- decision records so future teams know why code exists
-
-Assembly lines work when quality gates are boring and ruthless.
+Assembly lines are great when quality gates are strict.
+Assembly lines are chaos when everyone assumes the parts are fine.
 
 ## The Contrarian Take
 
 Software craftsmanship still matters. The address changed.
 
-Craft used to mean writing every line yourself. Now it means designing systems where average code can still produce above-average outcomes.
+Old craft was writing every line by hand.
+New craft is building a system where average generated code can still produce reliable outcomes.
 
-The winners won't be the teams that hand-carve everything.
-They'll be the teams that can ship flat-pack software quickly, then prove it won't fall apart in production.
+The winning teams won't be the ones hand-carving every endpoint.
+They'll be the teams that ship flat-pack software quickly and prove it survives production.
 
 ---
 
